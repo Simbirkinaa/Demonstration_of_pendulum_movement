@@ -12,7 +12,7 @@ alpha = np.radians(60)
 g = 9.81
 theta_dot0 = 0.0
 
-t = np.linspace(0, 10, 1000)
+t = np.linspace(0, 10, 400)
 dt = t[1] - t[0]
 
 # Создание анимации
