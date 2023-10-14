@@ -1,4 +1,3 @@
-
 name: CI
 
 on:
@@ -21,17 +20,11 @@ jobs:
           python-version: '3.9'
 
   test:
-
     needs: build
     runs-on: self-hosted
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
 
       - name: Run tests
         run: python tests/test_pendulum_module.py
